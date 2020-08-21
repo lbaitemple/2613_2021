@@ -1,0 +1,54 @@
+// Create a custom Cloud9 runner - similar to the Sublime build system
+// For more information see http://docs.aws.amazon.com/console/cloud9/create-run-config
+{
+    "info" : "Simulating with Vivado ... $project_path$file_base_name",
+    "script": [
+      // set to exit if any non-zero returned
+      "set -e",
+      // check if testbench exists with the tb_ prefix
+      "if [ ! -f tb_$file_base_name.sv ]",
+      "then",
+        // if not, give message and exit
+        "echo \"No testbench for $file_base_name\"",
+        "exit 1",
+      "fi",
+      // check if tcl simulation command file exists
+      "if [ ! -f tb_$file_base_name.tcl ]",
+      "then",
+        // if not, give message and exit
+        "echo \"No tcl simulation command file for $file_base_name\"",
+        "exit 2",
+      "fi",
+      // remove simulation work directory before running - bug in Vivado
+      "rm -rf xsim.dir",
+      // set Vivado environment
+      "export XILINXD_LICENSE_FILE=2100@coe-license.eng.temple.edu",
+      ". $ECE2612/Xilinx/Vivado/2018.2/settings64.sh",
+      // simulate based on flags file exists and called
+      "if [ -f $file_base_name.flags ] && [ $file_extension == 'flags' ]",
+      "then",
+        "xvlog -sv tb_$file_base_name.sv `cat $file_base_name.flags` $file_base_name.sv `cat $file_base_name.sim`",
+      "else",
+        "xvlog -sv  tb_$file_base_name.sv $file_base_name.sv `cat $file_base_name.sim`",
+      "fi",
+      // elaborate and compile
+      "xelab -debug typical tb_$file_base_name",
+      // run the simulation
+      "xsim -onerror quit -t tb_$file_base_name.tcl work.tb_$file_base_name",
+      // check if vcd file exists
+      "if [ -f tb_$file_base_name.vcd ]",
+      "then",
+        // if exists, compress to lxt2 format and remove
+        "echo \"Compressing vcd file to lxt2 file. ...\"",
+        "vcd2lxt2 tb_$file_base_name.vcd tb_$file_base_name.lxt2 &>vcd.backup.log",
+     //   "rm tb_$file_base_name.vcd",
+      "fi",
+      // clean up backup files
+      "rm -rf *.backup.jou *.backup.log",
+      // rename log file
+      "mv xsim.log tb_$file_base_name.log"
+    ],
+    "env" : {},
+    // select any .sim or .flags extension
+    "selector": "^.*\\.(sim|flags)$"
+}

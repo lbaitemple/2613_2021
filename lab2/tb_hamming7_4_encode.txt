@@ -1,0 +1,26 @@
+//
+// lab2 : version 06/12/2020
+// 
+//
+//
+// This file contains the test vectors for the Hamming(7,4) code.
+// The first four columns are the inputs: d[4:0].
+// The next seven columns are the Hamming code.
+// It needs to be 16 lines long to cover all possibilities.
+//
+0000_0000000
+0001_0000111
+0010_0011001
+0011_0011110
+0100_0101010
+0101_0101101
+0110_0110011
+0111_0110100
+1000_1001011
+1001_1001100
+1010_1010010
+1011_1010101
+1100_1100001
+1101_1100110
+1110_1111000
+1111_1111111

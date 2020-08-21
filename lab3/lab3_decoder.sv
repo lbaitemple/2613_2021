@@ -1,0 +1,16 @@
+//
+// lab3 : version 06/12/2020
+// 
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+module lab3_decoder(
+	output logic [3:0] an,
+	output logic [6:0] cathode,
+	input logic [6:0] sw
+	);
+
+	// instantiate the two modules here
+	// be sure and use the correct instance names
+
+endmodule

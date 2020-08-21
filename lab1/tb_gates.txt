@@ -1,0 +1,12 @@
+//
+//
+// This file contains the test vectors for the gates code.
+// The first two columns are the inputs: d_in[1:0] - which
+// get mapped to the a & b inputs of each gate.
+// The next four columns are the outputs of the gates.
+// The operations are AND, OR, XOR and NAND.
+//
+00_1000
+01_1110
+10_1110
+11_0011

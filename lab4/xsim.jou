@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# xsim v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jun 16 08:46:04 2020
+# Process ID: 12914
+# Current directory: /home/lbai/2613_2020s/lab4
+# Command line: xsim -mode tcl -source {xsim.dir/work.tb_lab4_decoder/xsim_script.tcl}
+# Log file: /home/lbai/2613_2020s/lab4/xsim.log
+# Journal file: /home/lbai/2613_2020s/lab4/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/work.tb_lab4_decoder/xsim_script.tcl
+source tb_lab4_decoder.tcl

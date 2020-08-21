@@ -1,0 +1,11 @@
+//
+// lab3 : version 06/12/2020
+// 
+//
+//
+// This file contains the test vectors for the anode decoder.
+// The first two columns are the switch inputs.
+// The next four columns are the anode data.
+// It needs to be 4 lines long to cover all possibilities.
+//
+00_1110 // example ... need 3 more test vectors

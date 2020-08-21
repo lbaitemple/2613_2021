@@ -1,0 +1,149 @@
+#-----------------------------------------------------------
+# xsim v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jun 16 08:45:27 2020
+# Process ID: 12619
+# Current directory: /home/lbai/2613_2020s/lab4
+# Command line: xsim -mode tcl -source {xsim.dir/work.tb_hamming7_4_decode/xsim_script.tcl}
+# Log file: /home/lbai/2613_2020s/lab4/xsim.log
+# Journal file: /home/lbai/2613_2020s/lab4/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/work.tb_hamming7_4_decode/xsim_script.tcl
+# xsim {work.tb_hamming7_4_decode} -autoloadwcfg -tclbatch {tb_hamming7_4_decode.tcl} -onerror quit
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source tb_hamming7_4_decode.tcl
+## run all
+Mismatch--loop index i:           0; input: 0000000, expected: 000_0000, received: xxx_xxxx
+Mismatch--loop index i:           1; input: 0000001, expected: 001_0000, received: xxx_xxxx
+Mismatch--loop index i:           2; input: 0000010, expected: 010_0000, received: xxx_xxxx
+Mismatch--loop index i:           3; input: 0000011, expected: 011_0000, received: xxx_xxxx
+Mismatch--loop index i:           4; input: 0000100, expected: 011_0001, received: xxx_xxxx
+Mismatch--loop index i:           5; input: 0000101, expected: 010_0001, received: xxx_xxxx
+Mismatch--loop index i:           6; input: 0000110, expected: 001_0001, received: xxx_xxxx
+Mismatch--loop index i:           7; input: 0000111, expected: 000_0001, received: xxx_xxxx
+Mismatch--loop index i:           8; input: 0001000, expected: 100_0000, received: xxx_xxxx
+Mismatch--loop index i:           9; input: 0001001, expected: 101_0000, received: xxx_xxxx
+Mismatch--loop index i:          10; input: 0001010, expected: 110_0000, received: xxx_xxxx
+Mismatch--loop index i:          11; input: 0001011, expected: 111_0000, received: xxx_xxxx
+Mismatch--loop index i:          12; input: 0001100, expected: 111_0001, received: xxx_xxxx
+Mismatch--loop index i:          13; input: 0001101, expected: 110_0001, received: xxx_xxxx
+Mismatch--loop index i:          14; input: 0001110, expected: 101_0001, received: xxx_xxxx
+Mismatch--loop index i:          15; input: 0001111, expected: 100_0001, received: xxx_xxxx
+Mismatch--loop index i:          16; input: 0010000, expected: 101_0010, received: xxx_xxxx
+Mismatch--loop index i:          17; input: 0010001, expected: 100_0010, received: xxx_xxxx
+Mismatch--loop index i:          18; input: 0010010, expected: 111_0010, received: xxx_xxxx
+Mismatch--loop index i:          19; input: 0010011, expected: 110_0010, received: xxx_xxxx
+Mismatch--loop index i:          20; input: 0010100, expected: 110_0011, received: xxx_xxxx
+Mismatch--loop index i:          21; input: 0010101, expected: 111_0011, received: xxx_xxxx
+Mismatch--loop index i:          22; input: 0010110, expected: 100_0011, received: xxx_xxxx
+Mismatch--loop index i:          23; input: 0010111, expected: 101_0011, received: xxx_xxxx
+Mismatch--loop index i:          24; input: 0011000, expected: 001_0010, received: xxx_xxxx
+Mismatch--loop index i:          25; input: 0011001, expected: 000_0010, received: xxx_xxxx
+Mismatch--loop index i:          26; input: 0011010, expected: 011_0010, received: xxx_xxxx
+Mismatch--loop index i:          27; input: 0011011, expected: 010_0010, received: xxx_xxxx
+Mismatch--loop index i:          28; input: 0011100, expected: 010_0011, received: xxx_xxxx
+Mismatch--loop index i:          29; input: 0011101, expected: 011_0011, received: xxx_xxxx
+Mismatch--loop index i:          30; input: 0011110, expected: 000_0011, received: xxx_xxxx
+Mismatch--loop index i:          31; input: 0011111, expected: 001_0011, received: xxx_xxxx
+Mismatch--loop index i:          32; input: 0100000, expected: 110_0100, received: xxx_xxxx
+Mismatch--loop index i:          33; input: 0100001, expected: 111_0100, received: xxx_xxxx
+Mismatch--loop index i:          34; input: 0100010, expected: 100_0100, received: xxx_xxxx
+Mismatch--loop index i:          35; input: 0100011, expected: 101_0100, received: xxx_xxxx
+Mismatch--loop index i:          36; input: 0100100, expected: 101_0101, received: xxx_xxxx
+Mismatch--loop index i:          37; input: 0100101, expected: 100_0101, received: xxx_xxxx
+Mismatch--loop index i:          38; input: 0100110, expected: 111_0101, received: xxx_xxxx
+Mismatch--loop index i:          39; input: 0100111, expected: 110_0101, received: xxx_xxxx
+Mismatch--loop index i:          40; input: 0101000, expected: 010_0100, received: xxx_xxxx
+Mismatch--loop index i:          41; input: 0101001, expected: 011_0100, received: xxx_xxxx
+Mismatch--loop index i:          42; input: 0101010, expected: 000_0100, received: xxx_xxxx
+Mismatch--loop index i:          43; input: 0101011, expected: 001_0100, received: xxx_xxxx
+Mismatch--loop index i:          44; input: 0101100, expected: 001_0101, received: xxx_xxxx
+Mismatch--loop index i:          45; input: 0101101, expected: 000_0101, received: xxx_xxxx
+Mismatch--loop index i:          46; input: 0101110, expected: 011_0101, received: xxx_xxxx
+Mismatch--loop index i:          47; input: 0101111, expected: 010_0101, received: xxx_xxxx
+Mismatch--loop index i:          48; input: 0110000, expected: 011_0110, received: xxx_xxxx
+Mismatch--loop index i:          49; input: 0110001, expected: 010_0110, received: xxx_xxxx
+Mismatch--loop index i:          50; input: 0110010, expected: 001_0110, received: xxx_xxxx
+Mismatch--loop index i:          51; input: 0110011, expected: 000_0110, received: xxx_xxxx
+Mismatch--loop index i:          52; input: 0110100, expected: 000_0111, received: xxx_xxxx
+Mismatch--loop index i:          53; input: 0110101, expected: 001_0111, received: xxx_xxxx
+Mismatch--loop index i:          54; input: 0110110, expected: 010_0111, received: xxx_xxxx
+Mismatch--loop index i:          55; input: 0110111, expected: 011_0111, received: xxx_xxxx
+Mismatch--loop index i:          56; input: 0111000, expected: 111_0110, received: xxx_xxxx
+Mismatch--loop index i:          57; input: 0111001, expected: 110_0110, received: xxx_xxxx
+Mismatch--loop index i:          58; input: 0111010, expected: 101_0110, received: xxx_xxxx
+Mismatch--loop index i:          59; input: 0111011, expected: 100_0110, received: xxx_xxxx
+Mismatch--loop index i:          60; input: 0111100, expected: 100_0111, received: xxx_xxxx
+Mismatch--loop index i:          61; input: 0111101, expected: 101_0111, received: xxx_xxxx
+Mismatch--loop index i:          62; input: 0111110, expected: 110_0111, received: xxx_xxxx
+Mismatch--loop index i:          63; input: 0111111, expected: 111_0111, received: xxx_xxxx
+Mismatch--loop index i:          64; input: 1000000, expected: 111_1000, received: xxx_xxxx
+Mismatch--loop index i:          65; input: 1000001, expected: 110_1000, received: xxx_xxxx
+Mismatch--loop index i:          66; input: 1000010, expected: 101_1000, received: xxx_xxxx
+Mismatch--loop index i:          67; input: 1000011, expected: 100_1000, received: xxx_xxxx
+Mismatch--loop index i:          68; input: 1000100, expected: 100_1001, received: xxx_xxxx
+Mismatch--loop index i:          69; input: 1000101, expected: 101_1001, received: xxx_xxxx
+Mismatch--loop index i:          70; input: 1000110, expected: 110_1001, received: xxx_xxxx
+Mismatch--loop index i:          71; input: 1000111, expected: 111_1001, received: xxx_xxxx
+Mismatch--loop index i:          72; input: 1001000, expected: 011_1000, received: xxx_xxxx
+Mismatch--loop index i:          73; input: 1001001, expected: 010_1000, received: xxx_xxxx
+Mismatch--loop index i:          74; input: 1001010, expected: 001_1000, received: xxx_xxxx
+Mismatch--loop index i:          75; input: 1001011, expected: 000_1000, received: xxx_xxxx
+Mismatch--loop index i:          76; input: 1001100, expected: 000_1001, received: xxx_xxxx
+Mismatch--loop index i:          77; input: 1001101, expected: 001_1001, received: xxx_xxxx
+Mismatch--loop index i:          78; input: 1001110, expected: 010_1001, received: xxx_xxxx
+Mismatch--loop index i:          79; input: 1001111, expected: 011_1001, received: xxx_xxxx
+Mismatch--loop index i:          80; input: 1010000, expected: 010_1010, received: xxx_xxxx
+Mismatch--loop index i:          81; input: 1010001, expected: 011_1010, received: xxx_xxxx
+Mismatch--loop index i:          82; input: 1010010, expected: 000_1010, received: xxx_xxxx
+Mismatch--loop index i:          83; input: 1010011, expected: 001_1010, received: xxx_xxxx
+Mismatch--loop index i:          84; input: 1010100, expected: 001_1011, received: xxx_xxxx
+Mismatch--loop index i:          85; input: 1010101, expected: 000_1011, received: xxx_xxxx
+Mismatch--loop index i:          86; input: 1010110, expected: 011_1011, received: xxx_xxxx
+Mismatch--loop index i:          87; input: 1010111, expected: 010_1011, received: xxx_xxxx
+Mismatch--loop index i:          88; input: 1011000, expected: 110_1010, received: xxx_xxxx
+Mismatch--loop index i:          89; input: 1011001, expected: 111_1010, received: xxx_xxxx
+Mismatch--loop index i:          90; input: 1011010, expected: 100_1010, received: xxx_xxxx
+Mismatch--loop index i:          91; input: 1011011, expected: 101_1010, received: xxx_xxxx
+Mismatch--loop index i:          92; input: 1011100, expected: 101_1011, received: xxx_xxxx
+Mismatch--loop index i:          93; input: 1011101, expected: 100_1011, received: xxx_xxxx
+Mismatch--loop index i:          94; input: 1011110, expected: 111_1011, received: xxx_xxxx
+Mismatch--loop index i:          95; input: 1011111, expected: 110_1011, received: xxx_xxxx
+Mismatch--loop index i:          96; input: 1100000, expected: 001_1100, received: xxx_xxxx
+Mismatch--loop index i:          97; input: 1100001, expected: 000_1100, received: xxx_xxxx
+Mismatch--loop index i:          98; input: 1100010, expected: 011_1100, received: xxx_xxxx
+Mismatch--loop index i:          99; input: 1100011, expected: 010_1100, received: xxx_xxxx
+Mismatch--loop index i:         100; input: 1100100, expected: 010_1101, received: xxx_xxxx
+Mismatch--loop index i:         101; input: 1100101, expected: 011_1101, received: xxx_xxxx
+Mismatch--loop index i:         102; input: 1100110, expected: 000_1101, received: xxx_xxxx
+Mismatch--loop index i:         103; input: 1100111, expected: 001_1101, received: xxx_xxxx
+Mismatch--loop index i:         104; input: 1101000, expected: 101_1100, received: xxx_xxxx
+Mismatch--loop index i:         105; input: 1101001, expected: 100_1100, received: xxx_xxxx
+Mismatch--loop index i:         106; input: 1101010, expected: 111_1100, received: xxx_xxxx
+Mismatch--loop index i:         107; input: 1101011, expected: 110_1100, received: xxx_xxxx
+Mismatch--loop index i:         108; input: 1101100, expected: 110_1101, received: xxx_xxxx
+Mismatch--loop index i:         109; input: 1101101, expected: 111_1101, received: xxx_xxxx
+Mismatch--loop index i:         110; input: 1101110, expected: 100_1101, received: xxx_xxxx
+Mismatch--loop index i:         111; input: 1101111, expected: 101_1101, received: xxx_xxxx
+Mismatch--loop index i:         112; input: 1110000, expected: 100_1110, received: xxx_xxxx
+Mismatch--loop index i:         113; input: 1110001, expected: 101_1110, received: xxx_xxxx
+Mismatch--loop index i:         114; input: 1110010, expected: 110_1110, received: xxx_xxxx
+Mismatch--loop index i:         115; input: 1110011, expected: 111_1110, received: xxx_xxxx
+Mismatch--loop index i:         116; input: 1110100, expected: 111_1111, received: xxx_xxxx
+Mismatch--loop index i:         117; input: 1110101, expected: 110_1111, received: xxx_xxxx
+Mismatch--loop index i:         118; input: 1110110, expected: 101_1111, received: xxx_xxxx
+Mismatch--loop index i:         119; input: 1110111, expected: 100_1111, received: xxx_xxxx
+Mismatch--loop index i:         120; input: 1111000, expected: 000_1110, received: xxx_xxxx
+Mismatch--loop index i:         121; input: 1111001, expected: 001_1110, received: xxx_xxxx
+Mismatch--loop index i:         122; input: 1111010, expected: 010_1110, received: xxx_xxxx
+Mismatch--loop index i:         123; input: 1111011, expected: 011_1110, received: xxx_xxxx
+Mismatch--loop index i:         124; input: 1111100, expected: 011_1111, received: xxx_xxxx
+Mismatch--loop index i:         125; input: 1111101, expected: 010_1111, received: xxx_xxxx
+Mismatch--loop index i:         126; input: 1111110, expected: 001_1111, received: xxx_xxxx
+Mismatch--loop index i:         127; input: 1111111, expected: 000_1111, received: xxx_xxxx
+Simulation complete -         128 mismatches!!!
+$finish called at time : 2560 ns : File "/home/lbai/2613_2020s/lab4/tb_hamming7_4_decode.sv" Line 67
+## exit
+INFO: [Common 17-206] Exiting xsim at Tue Jun 16 08:45:36 2020...

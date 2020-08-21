@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jun 16 08:46:11 2020
+# Process ID: 12968
+# Current directory: /home/lbai/2613_2020s/lab4
+# Command line: wbtcv -mode batch -source /home/lbai/2613_2020s/lab4/xsim.dir/work.tb_lab4_decoder/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/lbai/2613_2020s/lab4/webtalk.log
+# Journal file: /home/lbai/2613_2020s/lab4/webtalk.jou
+#-----------------------------------------------------------
+source /home/lbai/2613_2020s/lab4/xsim.dir/work.tb_lab4_decoder/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Jun 16 08:46:12 2020...
