@@ -41,7 +41,7 @@
         // if exists, compress to lxt2 format and remove
         "echo \"Compressing vcd file to lxt2 file. ...\"",
         "vcd2lxt2 tb_$file_base_name.vcd tb_$file_base_name.lxt2 &>vcd.backup.log",
-        "rm tb_$file_base_name.vcd",
+       // "rm tb_$file_base_name.vcd",
       "fi",
       // clean up backup files
       "rm -rf *.backup.jou *.backup.log",
