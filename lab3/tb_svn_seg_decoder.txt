@@ -1,7 +1,4 @@
 //
-// lab3 : version 06/12/2020
-// 
-//
 //
 // This file contains the test vectors for a seven segment decoder.
 // The first column in the enable signal.
