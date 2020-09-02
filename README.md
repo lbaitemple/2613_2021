@@ -7,7 +7,7 @@ echo $PATH
 ### step 2: add npm into your PATH
 ```
 echo "PATH=$HOME/.c9/node/bin:\$PATH" >> ~/.bashrc
-source ~/.bashrc_profile
+source ~/.bashrc
 ```
 Now check if npm is in the path
 ```
