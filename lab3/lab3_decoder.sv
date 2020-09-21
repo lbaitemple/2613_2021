@@ -7,7 +7,8 @@ module lab3_decoder(
 	input logic [6:0] sw
 	);
 
-	// instantiate the two modules here
-	// be sure and use the correct instance names
+	// instantiate two outputs from the class presentation, double check with your TA for the values 
+	assign an = [];
+	assign cathode =[];
 
 endmodule
