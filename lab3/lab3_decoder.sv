@@ -8,7 +8,7 @@ module lab3_decoder(
 	);
 
 	// instantiate two outputs from the class presentation, double check with your TA for the values 
-	assign an = [];
-	assign cathode =[];
+	//assign an = [];
+	//assign cathode =[];
 
 endmodule
