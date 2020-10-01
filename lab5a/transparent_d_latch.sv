@@ -3,6 +3,6 @@
 //////////////////////////////////////////////////////////////////////////////////
 module transparent_d_latch (output logic q, input logic d, input logic c);
 
-	lvl_sen_sr_latch u_lvl (.q, .s(d), .r(~d), .c);
+	// add code here
 
 endmodule
