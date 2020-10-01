@@ -4,5 +4,6 @@
 module sr_latch (output logic qa, output logic qb, input logic s,
 	input logic r);
 
+	
    // add your code here
 endmodule
