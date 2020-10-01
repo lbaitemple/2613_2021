@@ -4,6 +4,5 @@
 module sr_latch (output logic qa, output logic qb, input logic s,
 	input logic r);
 
-	assign qa = ~(s | qb);
-	assign qb = ~(r | qa);
+   // add your code here
 endmodule
