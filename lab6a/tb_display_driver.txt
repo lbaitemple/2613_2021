@@ -1,0 +1,25 @@
+//
+// This file contains the test vectors for the display driver.
+// The first column is the display_on signal.
+// The next four columns is the 4-bit digit3.
+// The next four columns is the 4-bit digit2.
+// The next four columns is the 4-bit digit1.
+// The next four columns is the 4-bit digit0.
+// The next 7 columns is the 7-bit cathode signal.
+// The next 4 columns is the 4-bit anode signal.
+// The next 2 columns is the 2-bit anode select signal.
+// It does not cover all possibilities, just checking
+// the interconnections and instantiations.
+// Each line will get read every millisecond.
+// So the simulation is about 10 milliseconds long.
+//
+1_0101_0100_0011_0010_0100100_1110_00
+1_0101_0100_0011_0010_0110000_1101_01
+1_0101_0100_0011_0010_0011001_1011_10
+1_0101_0100_0011_0010_0010010_0111_11
+1_0101_0100_0011_0010_0100100_1110_00
+0_0101_0100_0011_0010_1111111_1101_01
+1_1101_1100_1011_1010_1000110_1011_10
+1_1101_1100_1011_1010_0100001_0111_11
+1_1101_1100_1011_1010_0100000_1110_00
+1_1101_1100_1011_1010_0000011_1101_01
