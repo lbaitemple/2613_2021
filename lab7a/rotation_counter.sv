@@ -13,11 +13,10 @@ module rotation_counter (output logic [6:0] cathode, output logic [3:0] anode,
 		.digit0, .display_on(1'b1), .rst, .clk);
 
 	// instantiate up-down counter data path
-	up_down_count_dp u_uddp (.digit3, .digit2, .digit1, .digit0,
-		.enable, .up_down, .rst, .clk);
+
 
 	// instantiate rotation counter finite state machine
-	rc_fsm u_fsm (.enable, .up_down, .error, .quad_ctl, .rst, .clk);
+	
 
 	// instantiate rotary encoder recoder
 	rot_enc_rec u_rot (.quad_ctl, .q_a, .q_b, .clk);
