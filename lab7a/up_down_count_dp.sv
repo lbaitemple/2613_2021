@@ -6,6 +6,6 @@ module up_down_count_dp (output logic [3:0] digit3, output logic [3:0] digit2,
 
 	logic c_out0, c_out1, c_out2;	// internal carry out signals
 
-
+        // instantiate the 4 binary coded decimal counters
 
 endmodule
