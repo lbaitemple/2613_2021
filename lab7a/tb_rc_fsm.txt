@@ -28,10 +28,10 @@
 010_100
 001_110
 000_000
-// go from HOLD -> UP -> ERROR
+// go from HOLD -> UP -> UP -> ERROR
 001_110
-001_001
-001_001
+001_110
+011_001
 // reset
 100_000	// reset
 // go from HOLD -> UP -> ERROR
@@ -40,13 +40,13 @@
 011_001
 // reset
 100_000	// reset
-// go from HOLD -> UP -> ERROR
+// go from HOLD -> DOWN -> DOWN -> ERROR
 010_100
-010_001
-010_001
+010_100
+011_001
 // reset
 100_000	// reset
-// go from HOLD -> UP -> ERROR
+// go from HOLD -> DOWN -> ERROR
 010_100
 011_001
 011_001
