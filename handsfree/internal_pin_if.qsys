@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="System" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element CLK_IP
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element JTAG_2_Avalon_IP
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+   element LED_IP_0
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+   }
+   element LED_IP_0.s1
+   {
+      datum baseAddress
+      {
+         value = "16";
+         type = "String";
+      }
+   }
+   element LED_IP_1
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+   }
+   element LED_IP_1.s1
+   {
+      datum baseAddress
+      {
+         value = "32";
+         type = "String";
+      }
+   }
+   element SW_IP
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element SW_IP.s1
+   {
+      datum baseAddress
+      {
+         value = "0";
+         type = "String";
+      }
+   }
+   element param1
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+   }
+   element param1.s1
+   {
+      datum baseAddress
+      {
+         value = "48";
+         type = "String";
+      }
+   }
+   element param2
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+   }
+   element param2.s1
+   {
+      datum baseAddress
+      {
+         value = "64";
+         type = "String";
+      }
+   }
+   element param3
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+   }
+   element param3.s1
+   {
+      datum baseAddress
+      {
+         value = "80";
+         type = "String";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="10M50DCF484C7G" />
+ <parameter name="deviceFamily" value="MAX 10" />
+ <parameter name="deviceSpeedGrade" value="7" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface name="clk" internal="CLK_IP.clk_in" type="clock" dir="end" />
+ <interface
+   name="led31_to_0"
+   internal="LED_IP_0.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="led63_to_32"
+   internal="LED_IP_1.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="param1"
+   internal="param1.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="param2"
+   internal="param2.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="param3"
+   internal="param3.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface
+   name="pbs11_to_10_sws9_to_0"
+   internal="SW_IP.external_connection"
+   type="conduit"
+   dir="end" />
+ <interface name="reset" internal="CLK_IP.clk_in_reset" type="reset" dir="end" />
+ <module name="CLK_IP" kind="clock_source" version="19.1" enabled="1">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
+ <module
+   name="JTAG_2_Avalon_IP"
+   kind="altera_jtag_avalon_master"
+   version="19.1"
+   enabled="1">
+  <parameter name="AUTO_DEVICE" value="10M50DCF484C7G" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="MAX 10" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7" />
+  <parameter name="COMPONENT_CLOCK" value="0" />
+  <parameter name="FAST_VER" value="0" />
+  <parameter name="FIFO_DEPTHS" value="2" />
+  <parameter name="PLI_PORT" value="50000" />
+  <parameter name="USE_PLI" value="0" />
+ </module>
+ <module name="LED_IP_0" kind="altera_avalon_pio" version="19.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module name="LED_IP_1" kind="altera_avalon_pio" version="19.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Input" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module name="SW_IP" kind="altera_avalon_pio" version="19.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="12" />
+ </module>
+ <module name="param1" kind="altera_avalon_pio" version="19.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module name="param2" kind="altera_avalon_pio" version="19.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <module name="param3" kind="altera_avalon_pio" version="19.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
+ <connection
+   kind="avalon"
+   version="19.1"
+   start="JTAG_2_Avalon_IP.master"
+   end="LED_IP_0.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0010" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="19.1"
+   start="JTAG_2_Avalon_IP.master"
+   end="SW_IP.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="19.1"
+   start="JTAG_2_Avalon_IP.master"
+   end="LED_IP_1.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0020" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="19.1"
+   start="JTAG_2_Avalon_IP.master"
+   end="param1.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0030" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="19.1"
+   start="JTAG_2_Avalon_IP.master"
+   end="param2.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0040" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="19.1"
+   start="JTAG_2_Avalon_IP.master"
+   end="param3.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0050" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection kind="clock" version="19.1" start="CLK_IP.clk" end="LED_IP_0.clk" />
+ <connection kind="clock" version="19.1" start="CLK_IP.clk" end="SW_IP.clk" />
+ <connection
+   kind="clock"
+   version="19.1"
+   start="CLK_IP.clk"
+   end="JTAG_2_Avalon_IP.clk" />
+ <connection kind="clock" version="19.1" start="CLK_IP.clk" end="LED_IP_1.clk" />
+ <connection kind="clock" version="19.1" start="CLK_IP.clk" end="param1.clk" />
+ <connection kind="clock" version="19.1" start="CLK_IP.clk" end="param2.clk" />
+ <connection kind="clock" version="19.1" start="CLK_IP.clk" end="param3.clk" />
+ <connection
+   kind="reset"
+   version="19.1"
+   start="CLK_IP.clk_reset"
+   end="JTAG_2_Avalon_IP.clk_reset" />
+ <connection
+   kind="reset"
+   version="19.1"
+   start="CLK_IP.clk_reset"
+   end="SW_IP.reset" />
+ <connection
+   kind="reset"
+   version="19.1"
+   start="CLK_IP.clk_reset"
+   end="LED_IP_0.reset" />
+ <connection
+   kind="reset"
+   version="19.1"
+   start="CLK_IP.clk_reset"
+   end="LED_IP_1.reset" />
+ <connection
+   kind="reset"
+   version="19.1"
+   start="CLK_IP.clk_reset"
+   end="param1.reset" />
+ <connection
+   kind="reset"
+   version="19.1"
+   start="CLK_IP.clk_reset"
+   end="param2.reset" />
+ <connection
+   kind="reset"
+   version="19.1"
+   start="CLK_IP.clk_reset"
+   end="param3.reset" />
+ <connection
+   kind="reset"
+   version="19.1"
+   start="JTAG_2_Avalon_IP.master_reset"
+   end="JTAG_2_Avalon_IP.clk_reset" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>
