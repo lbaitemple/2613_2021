@@ -1,0 +1,19 @@
+// Create a custom Cloud9 runner - similar to the Sublime build system
+// For more information see http://docs.aws.amazon.com/console/cloud9/create-run-config
+{
+    "info" : "Synthesizing with Quartus ... $project_path$file_name",
+    "script": [
+      // set Quartus environment
+      "export QUARTUS_ROOTDIR=/data/courses/ece_2612/Intel_Altera/install_directory/quartus",
+      "export PATH=$PATH:$QUARTUS_ROOTDIR/bin",
+
+      // set to exit if any non-zero returned
+      "set -e",
+      "quartus_sh --flow compile $file_base_name",
+      // clean up vcd files
+      "rm -rf *.vcd *.lxt2"
+    ],
+    "env" : {},
+    // select any *.qsf extension
+    "selector": "^.*\\.(qsf)$"
+}
