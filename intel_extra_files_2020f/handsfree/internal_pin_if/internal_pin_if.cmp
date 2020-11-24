@@ -1,0 +1,13 @@
+	component internal_pin_if is
+		port (
+			clk_clk                      : in  std_logic                     := 'X';             -- clk
+			led31_to_0_export            : in  std_logic_vector(31 downto 0) := (others => 'X'); -- export
+			led63_to_32_export           : in  std_logic_vector(31 downto 0) := (others => 'X'); -- export
+			param1_export                : out std_logic_vector(31 downto 0);                    -- export
+			param2_export                : out std_logic_vector(31 downto 0);                    -- export
+			param3_export                : out std_logic_vector(31 downto 0);                    -- export
+			pbs11_to_10_sws9_to_0_export : out std_logic_vector(11 downto 0);                    -- export
+			reset_reset_n                : in  std_logic                     := 'X'              -- reset_n
+		);
+	end component internal_pin_if;
+
