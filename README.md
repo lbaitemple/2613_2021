@@ -1,4 +1,9 @@
-# 2613_2020f
+# 2613_2021s
+Login to in your aws cloud 9
+```
+git clone https://github.com/lbaitemple/2613_2021s
+```
+
 ### step 1: check your path
 ```
 which npm
