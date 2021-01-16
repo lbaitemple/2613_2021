@@ -6,8 +6,9 @@
       // set to exit if any non-zero returned
       "set -e",
       // set Vivado environment
-      "export XILINXD_LICENSE_FILE=2100@coe-license.eng.temple.edu",
-      ". $ECE2612/Xilinx/Vivado/2018.2/settings64.sh",
+      //"export XILINXD_LICENSE_FILE=2100@coe-license.eng.temple.edu",
+      //". $ECE2612/Xilinx/Vivado/2018.2/settings64.sh",
+      . $ECE2612/Xilinx/Vivado/2020.2/.settings64-Vivado.sh
 
       // remove simulation work directory before running - bug in Vivado
       "rm -rf xsim.dir",
