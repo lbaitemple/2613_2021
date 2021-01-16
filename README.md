@@ -1,6 +1,8 @@
 # 2613_2021s
 Instruction is provided at https://sites.google.com/a/temple.edu/ece2612/home/cloud9-setup
 
+Server Address: ece-000.eng.temple.edu
+
 Login to in your aws cloud 9
 ```
 git clone https://github.com/lbaitemple/2613_2021s
