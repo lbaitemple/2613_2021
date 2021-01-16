@@ -23,8 +23,8 @@
       "rm -rf xsim.dir",
       // set Vivado environment
       . $ECE2612/Xilinx/Vivado/2020.2/.settings64-Vivado.sh
-      #"export XILINXD_LICENSE_FILE=2100@coe-license.eng.temple.edu",
-      #". $ECE2612/Xilinx/Vivado/2018.2/settings64.sh",
+     //"export XILINXD_LICENSE_FILE=2100@coe-license.eng.temple.edu",
+     //". $ECE2612/Xilinx/Vivado/2018.2/settings64.sh",
       // simulate based on flags file exists and called
       "if [ -f $file_base_name.flags ] && [ $file_extension == 'flags' ]",
       "then",
