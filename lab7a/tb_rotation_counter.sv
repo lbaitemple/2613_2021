@@ -119,7 +119,7 @@ endfunction
 			end	// end of if
 
 			// wait here for anode select change, or if reset, ignore
-			if (data_in[2] == 1'b0) @((posedge anode_sel[0]) or (negedge anode_sel[0]));
+			if (data_in[2] == 1'b0) @(anode_sel[0]);
 
 		end	// end of for loop
 
