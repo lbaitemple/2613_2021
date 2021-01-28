@@ -1,0 +1,47 @@
+// Create a custom Cloud9 runner - similar to the Sublime build system
+// For more information see http://docs.aws.amazon.com/console/cloud9/create-run-config
+{
+    "info" : "Simulating with Modelsim ... $project_path$file_name",
+    "script": [
+      // set to exit if any non-zero returned
+      "set -e",
+      // check if testbench exists with the tb_ prefix
+      "if [ ! -f tb_$file_base_name.sv ]",
+      "then",
+        // if not, give message and exit
+        "echo \"No testbench for $file_base_name\"",
+        "exit 1",
+      "fi",
+      // set Modelsim environment
+      "export MODELSIM_ROOTDIR=$ECE2612/Intel_Altera/install_directory/modelsim_ase",
+      "export PATH=$PATH:$MODELSIM_ROOTDIR/bin",
+      // remove simulation work directory before running to clean everything
+      // and create a new vsim_work directory
+      "rm -rf vsim_work; vlib vsim_work",
+      // define mapping between logical library work and directory vsim_work (defines this in the modelsim.ini file)
+      "vmap work vsim_work",
+      // compile SystemVerilog files - command line depends on flags file
+      "if [ -f $file_base_name.flags ] && [ $file_extension == 'flags' ]",
+      "then",
+        "vlog -sv tb_$file_base_name.sv `cat $file_base_name.flags` $file_base_name.sv `cat $file_base_name.sim`",
+      "else",
+        "vlog -sv tb_$file_base_name.sv $file_base_name.sv `cat $file_base_name.sim`",
+      "fi",
+      // run the simulation
+      "vsim -c -do $file_base_name.m_sim tb_$file_base_name",
+      // check if vcd file exists and compress file
+      "if [ -f tb_$file_base_name.vcd ] && [ -f tb_$file_base_name.compress ]",
+      "then",
+        // if exists, compress to lxt2 format and remove
+        "echo \"Compressing vcd file to lxt2 file. ...\"",
+        "vcd2lxt2 tb_$file_base_name.vcd tb_$file_base_name.lxt2 &>vcd.backup.log",
+        "rm tb_$file_base_name.vcd",
+      "fi",
+      // todo - clean up backup files
+      // rename log file
+      "mv transcript tb_$file_base_name.log"
+    ],
+    "env" : {},
+    // select any *.qsf extension
+    "selector": "^.*\\.(m_sim)$"
+}
