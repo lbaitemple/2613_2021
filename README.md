@@ -38,5 +38,6 @@ fetcher --url="https://github.com/lbaitemple/2613_2020f/tree/master/lab2"
 
 ### step 5: zip the file (for example in lab4)
 ```
+cd lab4
 zip lab4.zip run_hf.bat output_files/*.sof
 ```
