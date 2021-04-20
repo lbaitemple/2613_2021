@@ -35,3 +35,8 @@ After that, you can download the lab 2 folder by typing
 rm -rf lab2
 fetcher --url="https://github.com/lbaitemple/2613_2020f/tree/master/lab2"
 ```
+
+### step 5: zip the file (for example in lab4)
+```
+zip lab4.zip run_hf.bat output_files/*.sof
+```
