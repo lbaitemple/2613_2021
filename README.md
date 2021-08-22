@@ -24,3 +24,8 @@ ssh-keygen -t rsa -b 4096 -C "lbai_student@ece-000.eng.temple.edu"
 ssh-copy-id lbai_student@ece-000.eng.temple.edu
 ```
 
+```
+mkdir ece2613
+echo "sshfs lbai_student@ece-000.eng.temple.edu:/home/lbai_student/ece2613 /home/ubuntu/environment/ece2613" >> ~/.bashrc
+```
+
