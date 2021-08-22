@@ -5,7 +5,7 @@ Server Address: `ece-000.eng.temple.edu`
 
 Login to in your aws cloud 9
 ```
-git clone -b fall2021 https://github.com/lbaitemple/2613_2021s
+git clone -b fall2021 https://github.com/lbaitemple/ece2613
 ```
 
 ### step 1: check your path
