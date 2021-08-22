@@ -8,36 +8,19 @@ Login to in your aws cloud 9
 git clone -b fall2021 https://github.com/lbaitemple/ece2613
 ```
 
-### step 1: check your path
+### GTK setup
 ```
-which npm
-echo $PATH
-```
-### step 2: add npm into your PATH
-```
-echo "PATH=$HOME/.c9/node/bin:\$PATH" >> ~/.bashrc
-source ~/.bashrc
-```
-Now check if npm is in the path
-```
-which npm 
+sudo apt update && sudo apt upgrade -y
+rm -rf var/lib/dpkg/lock*
+sudo dpkg --configure -a
+sudo apt update && sudo apt upgrade -y
+sudo apt install sshfs gtkwave -y
+
 ```
 
-### step 3: install github fetcher
-You may want to install fetcher by typing the following commands from a command terminal window
+Now, connect the drive
 ```
-npm install -g github-files-fetcher
-```
-
-### step 4: download a github folder
-After that, you can download the lab 2 folder by typing
-```
-rm -rf lab2
-fetcher --url="https://github.com/lbaitemple/2613_2020f/tree/master/lab2"
+ssh-keygen -t rsa -b 4096 -C "lbai_student@ece-000.eng.temple.edu"
+ssh-copy-id lbai_student@ece-000.eng.temple.edu
 ```
 
-### step 5: zip the file (for example in lab4)
-```
-cd lab4
-zip lab4.zip run_hf.bat output_files/*.sof
-```
