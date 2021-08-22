@@ -15,7 +15,7 @@ rm -rf var/lib/dpkg/lock*
 sudo dpkg --configure -a
 sudo apt update && sudo apt upgrade -y
 sudo apt install sshfs gtkwave -y
-
+sudo modprobe fuse
 ```
 
 Now, connect the drive
