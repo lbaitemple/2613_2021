@@ -28,5 +28,6 @@ ssh-copy-id lbai_student@ece-000.eng.temple.edu
 mkdir ece2613
 echo "sshfs lbai_student@ece-000.eng.temple.edu:/home/lbai_student/ece2613 /home/ubuntu/environment/ece2613" >> ~/.bashrc
 sudo sh -c "lbai_student@ece-000.eng.temple.edu:/home/lbai_student/ece2613 /home/ubuntu/environment/ece2613  fuse.sshfs  defaults  0  0 >> /etc/fstab"
+source ~/.bashrc
 ```
 
