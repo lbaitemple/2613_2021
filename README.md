@@ -30,7 +30,10 @@ echo "alias conn2613='sshfs lbai_student@ece-000.eng.temple.edu:/home/lbai_stude
 ```
 
 
-
+### new command with using bashrc command
+```
+sudo sh -c 'echo "lbai_student@ece-000.eng.temple.edu:/home/lbai_student/ece2613 /home/ubuntu/environment/ece2613  fuse.sshfs  defaults  0  0" >> /etc/fstab' 
+```
 
 ```
 #sudo sh -c "lbai_student@ece-000.eng.temple.edu:/home/lbai_student/ece2613 /home/ubuntu/environment/ece2613  fuse.sshfs  defaults  0  0 >> #/etc/fstab"
