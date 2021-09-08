@@ -6,7 +6,7 @@ echo "Welcome ${accessnetid}!"
 
 
 
-ssh-keygen -q -t rsa -b 4096 -C "{accessnetid}@ece-000.eng.temple.edu"
+ssh-keygen -q -t rsa -b 4096 -C "${accessnetid}@ece-000.eng.temple.edu"
 ssh-copy-id -f  ${accessnetid}@ece-000.eng.temple.edu
 
 
