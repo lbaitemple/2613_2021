@@ -5,7 +5,7 @@ Server Address: `ece-000.eng.temple.edu`
 
 Login to in your aws cloud 9
 ```
-git clone -b fall2021 https://github.com/lbaitemple/ece2613
+git clone -b fall2021 https://github.com/lbaitemple/ece2613 fall2021
 ```
 
 ### GTK setup
@@ -16,6 +16,12 @@ sudo dpkg --configure -a
 sudo apt update && sudo apt upgrade -y
 sudo apt install sshfs gtkwave -y
 sudo modprobe fuse
+```
+After that, you can run
+```
+cd fall2021
+chmod +x gen.sh
+./gen.sh
 ```
 
 Now, connect the drive
