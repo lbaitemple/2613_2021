@@ -41,3 +41,9 @@ fetcher --url="https://github.com/lbaitemple/2613_2020f/tree/master/lab2"
 cd lab4
 zip lab4.zip run_hf.bat output_files/*.sof
 ```
+
+### terminal commands
+```
+$ECE2612/backdoor/simulate svn_seg_decoder
+$ECE2612/backdoor/synthesize lab3_top_io_wrapper
+```
