@@ -47,3 +47,9 @@ zip lab4.zip run_hf.bat output_files/*.sof
 $ECE2612/backdoor/simulate svn_seg_decoder
 $ECE2612/backdoor/synthesize lab3_top_io_wrapper
 ```
+
+Simulation - Modelsim simulator (only the basename is used)
+```
+$ECE2612/backdoor/ms_simulate svn_seg_decoder
+$ECE2612/backdoor/q_synthesize lab3_top_io_wrapper
+```
