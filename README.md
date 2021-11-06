@@ -46,3 +46,23 @@ sudo sh -c 'echo "lbai_student@ece-000.eng.temple.edu:/home/lbai_student/ece2613
 #source ~/.bashrc
 #cp -r ece2613/.c9/runners ~/.c9/
 ```
+
+Here are the command line equivalents for the Intel/Altera tools:
+
+Simulation - Modelsim simulator (only the basename is used)
+```
+$ECE2612/backdoor/ms_simulate <Verilog file basename>
+```
+Example from lab3: 
+```
+$ECE2612/backdoor/ms_simulate svn_seg_decoder
+```
+
+Synthesis (use the top_io_wrapper basename)
+```
+$ECE2612/backdoor/q_synthesize <top wrapper basename>
+```
+Example from lab3: 
+```
+$ECE2612/backdoor/q_synthesize lab3_top_io_wrapper
+```
