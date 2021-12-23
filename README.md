@@ -1,11 +1,11 @@
-# 2613_2021s
+# 2613_2022s
 Instruction is provided at https://sites.google.com/a/temple.edu/ece2612/home/cloud9-setup
 
 Server Address: `ece-000.eng.temple.edu`
 
 Login to in your aws cloud 9
 ```
-git clone -b fall2021 https://github.com/lbaitemple/ece2613 fall2021
+git clone -b spring2022 https://github.com/lbaitemple/ece2613 fall2021
 ```
 
 ### GTK setup
