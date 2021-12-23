@@ -5,8 +5,8 @@ Server Address: `ece-000.eng.temple.edu`
 
 Login to in your aws cloud 9
 ```
-git clone -b spring2022 https://github.com/lbaitemple/ece2613 spring202
-cd spring2022
+git clone -b spring2022 https://github.com/lbaitemple/ece2613 ece2613
+cd ece2613
 chmod +x udpateos.sh
 ./updateos.sh
 ```
