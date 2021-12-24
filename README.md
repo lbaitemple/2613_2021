@@ -3,6 +3,8 @@ Instruction is provided at https://sites.google.com/a/temple.edu/ece2612/home/cl
 
 Server Address: `ece-000.eng.temple.edu`
 
+link to create publick=/private key https://8gwifi.org/sshfunctions.jsp
+
 Login to in your aws cloud 9
 ```
 git clone -b spring2022 https://github.com/lbaitemple/ece2613 ece2613
