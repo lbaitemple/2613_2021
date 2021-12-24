@@ -1,18 +1,6 @@
 # 2613_2022s
 Instruction is provided at https://sites.google.com/a/temple.edu/ece2612/home/cloud9-setup
 
-Server Address: `ece-000.eng.temple.edu`
-
-link to create publick=/private key https://8gwifi.org/sshfunctions.jsp
-
-Login to in your aws cloud 9
-```
-git clone -b spring2022 https://github.com/lbaitemple/ece2613 ece2613
-cd ece2613
-chmod +x udpateos.sh
-./updateos.sh
-```
-
 ### Download VScode  (https://code.visualstudio.com/Download)
 #### find the following extensions
 1. remote ssh
@@ -20,7 +8,17 @@ chmod +x udpateos.sh
 3. wavetrace
 4. SystemVerilog - Language Support
 
+Server Address: `ece-000.eng.temple.edu`
 
+link to create publick=/private key https://8gwifi.org/sshfunctions.jsp
+
+Login to in your aws cloud 9
+```
+git clone -b spring2022 https://github.com/lbaitemple/ece2613 
+cd ece2613
+chmod +x udpateos.sh
+./updateos.sh
+```
 
 Here are the command line equivalents for the Intel/Altera tools:
 
