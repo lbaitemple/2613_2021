@@ -22,7 +22,7 @@ Login to in your aws cloud 9
 ```
 git clone -b spring2022 https://github.com/lbaitemple/ece2613 
 cd ece2613
-chmod +x udpateos.sh
+chmod +x updateos.sh
 ./updateos.sh
 ```
 
