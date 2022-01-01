@@ -10,6 +10,10 @@ Instruction is provided at https://sites.google.com/a/temple.edu/ece2612/home/cl
 
 Server Address: `ece-000.eng.temple.edu`
 
+Create a file .ssh/authorized_keys
+
+(add public key)
+
 link to create publick=/private key https://8gwifi.org/sshfunctions.jsp
 
 Login to in your aws cloud 9
