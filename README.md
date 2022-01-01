@@ -12,6 +12,8 @@ Server Address: `ece-000.eng.temple.edu`
 
 Create a file .ssh/authorized_keys
 
+Add pulic key in IdentityFile tag in .ssh/config file
+
 (add public key)
 
 link to create publick=/private key https://8gwifi.org/sshfunctions.jsp
