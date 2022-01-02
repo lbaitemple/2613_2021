@@ -12,11 +12,11 @@ Server Address: `ece-000.eng.temple.edu`
 
 Create a file .ssh/authorized_keys
 
-Add pulic key in IdentityFile tag in .ssh/config file
+Add pulic key 
 
-(add public key)
+(add private key) in IdentityFile tag in .ssh/config file
 
-link to create publick=/private key https://8gwifi.org/sshfunctions.jsp
+link to create public=/private key https://8gwifi.org/sshfunctions.jsp
 
 Login to in your aws cloud 9
 ```
