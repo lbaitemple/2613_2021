@@ -27,6 +27,8 @@ module tb_gates;
 	integer mm_count;	// define a variable to count mismatches
 
 	initial begin
+		$dumpfile("tb_gates.vcd");
+		$dumpvars();
 
 		mm_count = 0;	// zero mismatch count
 
