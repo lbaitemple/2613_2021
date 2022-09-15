@@ -26,6 +26,13 @@ chmod +x updateos.sh
 ./updateos.sh
 ```
 
+Update new os file
+```
+wget https://raw.githubusercontent.com/lbaitemple/ece2613/spring2022/updateos.sh
+chmod +x updateos.sh
+./updateos.sh
+```
+
 Here are the command line equivalents for the Intel/Altera tools:
 
 Simulation - Modelsim simulator (only the basename is used)
