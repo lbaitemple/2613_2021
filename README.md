@@ -28,6 +28,8 @@ chmod +x updateos.sh
 
 Update new os file
 ```
+cd ~/ece2613/
+rm updateos.sh
 wget https://raw.githubusercontent.com/lbaitemple/ece2613/spring2022/updateos.sh
 chmod +x updateos.sh
 ./updateos.sh
