@@ -7,6 +7,7 @@ Instruction is provided at https://sites.google.com/a/temple.edu/ece2612/home/cl
 2. code runner
 3. wavetrace
 4. SystemVerilog - Language Support
+5. SystemVerilog-1800-2012 (install on the remote server)
 
 Server Address: `ece-000.eng.temple.edu`
 
