@@ -1,0 +1,23 @@
+ wget https://raw.githubusercontent.com/lbaitemple/mangdang/main/install-resize.sh
+ bash ./install-resize.sh
+ aws s3 cp s3://intellb/max10-22.1std.2.922.qdz .
+ aws s3 cp s3://intellb/QuartusLiteSetup-22.1std.2.922-linux.run .
+ chmod +x QuartusLiteSetup-22.1std.2.922-linux.run 
+./QuartusLiteSetup-22.1std.2.922-linux.run --mode unattended --accept_eula 1 
+ aws s3 cp s3://intellb/ModelSimSetup-20.1.1.720-linux.run .
+ chmod +x ModelSimSetup-20.1.1.720-linux.run 
+./ModelSimSetup-20.1.1.720-linux.run --mode unattended --accept_eula 1 
+sudo  apt-get install libxft2 libxft2:i386 libxrender1:i386 libxtst6:i386 libxi6:i386 -y
+aws s3 cp s3://intellb/backdoor.zip .
+unzip backdoor.zip 
+echo "export PATH='$PATH:/home/ubuntu/intelFPGA_lite/22.1std/quartus/bin:/home/ubuntu/environment/backdoor'" > ~/.bashrc
+
+
+sudo dpkg --add-architecture i386 
+sudo apt-get update 
+sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 -y
+sudo apt-get install lib32z1 libxrender1:i386  libxft2 libxft2:i386  libxtst6:i386 libxi6:i386 -y
+git clone -b spring2022 https://github.com/lbaitemple/ece2613 
+cd ece2613
+chmod +x updateos.sh
+./updateos.sh
