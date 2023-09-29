@@ -15,7 +15,7 @@ echo "export PATH='$PATH:/home/ubuntu/intelFPGA_lite/22.1std/quartus/bin:/home/u
 
 sudo dpkg --add-architecture i386 
 sudo apt-get update 
-sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 -y
+sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 gtkwave -y
 sudo apt-get install lib32z1 libxrender1:i386  libxft2 libxft2:i386  libxtst6:i386 libxi6:i386 -y
 git clone -b spring2022 https://github.com/lbaitemple/ece2613 
 cd ece2613
