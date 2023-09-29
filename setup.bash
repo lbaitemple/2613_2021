@@ -1,5 +1,14 @@
  wget https://raw.githubusercontent.com/lbaitemple/mangdang/main/install-resize.sh
  bash ./install-resize.sh
+
+ ### 2. Install Desktop
+wget https://raw.githubusercontent.com/aws-samples/robotics-boilerplate/main/install-desktop.sh
+bash ./install-desktop.sh
+
+### 3. DCV
+wget https://raw.githubusercontent.com/aws-samples/robotics-boilerplate/main/install-dcv.sh
+bash ./install-dcv.sh
+
  aws s3 cp s3://intellb/max10-22.1std.2.922.qdz .
  aws s3 cp s3://intellb/QuartusLiteSetup-22.1std.2.922-linux.run .
  chmod +x QuartusLiteSetup-22.1std.2.922-linux.run 
