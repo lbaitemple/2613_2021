@@ -13,7 +13,7 @@
         "exit 1",
       "fi",
       // set Modelsim environment
-      "export MODELSIM_ROOTDIR=$ECE2612/Intel_Altera/install_directory/modelsim_ase",
+      "export MODELSIM_ROOTDIR=/home/ubuntu/intelFPGA/20.1/modelsim_ase",
       "export PATH=$PATH:$MODELSIM_ROOTDIR/bin",
       // remove simulation work directory before running to clean everything
       // and create a new vsim_work directory

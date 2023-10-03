@@ -4,13 +4,13 @@
     "info" : "Synthesizing with Quartus ... $project_path$file_name",
     "script": [
       // set Quartus environment
-      "export QUARTUS_ROOTDIR=/data/courses/ece_2612/Intel_Altera/install_directory/quartus",
+      "export QUARTUS_ROOTDIR=/home/ubuntu/intelFPGA_lite/22.1std/quartus/",
       "export PATH=$PATH:$QUARTUS_ROOTDIR/bin",
 
       // set to exit if any non-zero returned
       "set -e",
       "quartus_sh --flow compile $file_base_name",
-      "quartus_cpf  -c -q 1MHz -g 3.3 -n p $file_base_name.sof $file_base_name.svf"
+      "quartus_cpf  -c -q 1MHz -g 3.3 -n p $file_base_name.sof $file_base_name.svf",
       // clean up vcd files
       "rm -rf *.vcd *.lxt2"
     ],
