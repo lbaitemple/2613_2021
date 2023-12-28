@@ -1,4 +1,4 @@
-# 2613_2022s
+# 2613_2024s
 Instruction is provided at https://sites.google.com/a/temple.edu/ece2612/home/cloud9-setup
 
 ### Download VScode  (https://code.visualstudio.com/Download)
@@ -21,7 +21,7 @@ link to create public=/private key https://8gwifi.org/sshfunctions.jsp
 
 Login to in your aws cloud 9
 ```
-git clone -b spring2022 https://github.com/lbaitemple/ece2613 
+git clone -b spring24 https://github.com/lbaitemple/ece2613 
 cd ece2613
 chmod +x updateos.sh
 ./updateos.sh
