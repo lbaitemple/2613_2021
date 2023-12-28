@@ -17,7 +17,8 @@ bash ./install-dcv.sh
  chmod +x ModelSimSetup-20.1.1.720-linux.run 
 ./ModelSimSetup-20.1.1.720-linux.run --mode unattended --accept_eula 1 
 #sudo  apt-get install libxft2 libxft2:i386 libxrender1:i386 libxtst6:i386 libxi6:i386 -y
-aws s3 cp s3://intellb/backdoor.zip .
+# aws s3 cp s3://intellb/backdoor.zip .
+gdown --id 1ESAcilkTnWTU6mUQ7irp1BWktr8h110n --output  backdoor.zip
 unzip backdoor.zip 
 echo "export PATH='$PATH:/home/ubuntu/intelFPGA_lite/22.1std/quartus/bin:/home/ubuntu/environment/backdoor'" > ~/.bashrc
 
