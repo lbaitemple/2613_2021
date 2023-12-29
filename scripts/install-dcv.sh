@@ -1,7 +1,7 @@
 #!/bin/bash -v
 
-apt-get install -q -y python-setuptools wget tmux unzip tar curl sed
-apt-get -q -y install dpkg-dev
+sudo apt-get install -q -y python-setuptools wget tmux unzip tar curl sed
+sudo apt-get -q -y install dpkg-dev
 
 if ((uname -a | grep x86 1>/dev/null) && (cat /etc/os-release | grep 22.04 1>/dev/null)); then
   rm -f /tmp/nice-dcv-ubuntu1804-x86_64.tgz
@@ -47,12 +47,12 @@ mv ./dcv.conf /etc/dcv/dcv.conf
 
 # Configure DCV Session
 sudo su -l ubuntu -c dbus-launch gsettings set org.gnome.shell enabled-extensions "['ubuntu-dock@ubuntu.com']"
-/sbin/iptables -A INPUT -p tcp ! -s localhost --dport 8080 -j DROP
-systemctl enable dcvserver
-systemctl start dcvserver
+sudo /sbin/iptables -A INPUT -p tcp ! -s localhost --dport 8080 -j DROP
+sudo systemctl enable dcvserver
+sudo systemctl start dcvserver
 
 # Create service to launch DCV Session on server restart
-cat << 'EOF' > /etc/systemd/system/dcvsession.service
+sudo cat << 'EOF' > /etc/systemd/system/dcvsession.service
 [Unit]
 Description=NICE DCV Session
 After=dcvserver.service
@@ -66,8 +66,8 @@ WantedBy=multi-user.target
 EOF
 
 # text console: DCV virtual sessions only
-systemctl isolate multi-user.target
-systemctl set-default multi-user.target
+sudo systemctl isolate multi-user.target
+sudo systemctl set-default multi-user.target
 
 sudo systemctl daemon-reload
 sudo systemctl enable dcvsession
