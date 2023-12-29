@@ -5,7 +5,7 @@ Instruction is provided at https://sites.google.com/a/temple.edu/ece2612/home/cl
 ```
 git clone -b spring24 https://github.com/lbaitemple/ece2613 
 cd ece2613
-cat ./setup.sh | sudo -E bash -
+bash ./setup.bash
 sudo reboot
 ```
 
