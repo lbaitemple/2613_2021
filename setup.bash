@@ -1,13 +1,13 @@
  wget https://raw.githubusercontent.com/lbaitemple/mangdang/main/install-resize.sh
- bash ./install-resize.sh  
+ cat ./install-resize.sh   | sudo -E bash -
 
  ### 2. Install Desktop
 wget https://raw.githubusercontent.com/aws-samples/robotics-boilerplate/main/install-desktop.sh
-bash ./install-desktop.sh  
+cat ./install-desktop.sh   | sudo -E bash -
 
 ### 3. DCV
 wget https://raw.githubusercontent.com/aws-samples/robotics-boilerplate/main/install-dcv.sh
-bash ./install-dcv.sh 
+cat ./install-dcv.sh | sudo -E bash -
 
 wget https://github.com/lbaitemple/ece2613/releases/download/v1.0.0/max10-22.1std.2.922.qdz
 wget https://github.com/lbaitemple/ece2613/releases/download/v1.0.0/ModelSimSetup-20.1.1.720-linux.run
@@ -32,6 +32,7 @@ sudo apt-get update
 sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 gtkwave -y
 sudo apt-get install lib32z1 libxrender1:i386  libxft2 libxft2:i386  libxtst6:i386 libxi6:i386 -y
 #git clone -b spring2022 https://github.com/lbaitemple/ece2613 
+cp -r .c9 ~/environment
 #cd ece2613
 chmod +x updateos.sh
 ./updateos.sh
