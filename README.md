@@ -9,31 +9,7 @@ bash ./setup.bash
 sudo reboot
 ```
 
-Update new os file
-```
-cd ~/ece2613/
-rm updateos.sh
-wget https://raw.githubusercontent.com/lbaitemple/ece2613/spring2022/updateos.sh
-chmod +x updateos.sh
-./updateos.sh
-```
+# Test the code
+- right click on m_sim (extension file) and run
 
-Here are the command line equivalents for the Intel/Altera tools:
-
-Simulation - Modelsim simulator (only the basename is used)
-```
-$ECE2612/backdoor/ms_simulate <Verilog file basename>
-```
-Example from lab3: 
-```
-$ECE2612/backdoor/ms_simulate svn_seg_decoder
-```
-
-Synthesis (use the top_io_wrapper basename)
-```
-$ECE2612/backdoor/q_synthesize <top wrapper basename>
-```
-Example from lab3: 
-```
-$ECE2612/backdoor/q_synthesize lab3_top_io_wrapper
-```
+- right click on qsf (extension file) and run
