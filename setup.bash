@@ -7,7 +7,7 @@ bash ./install-desktop.sh
 
 ### 3. DCV
 wget https://raw.githubusercontent.com/aws-samples/robotics-boilerplate/main/install-dcv.sh
-bash ./install-dcv.sh \
+bash ./install-dcv.sh 
 
 wget https://github.com/lbaitemple/ece2613/releases/download/v1.0.0/max10-22.1std.2.922.qdz
 wget https://github.com/lbaitemple/ece2613/releases/download/v1.0.0/ModelSimSetup-20.1.1.720-linux.run
