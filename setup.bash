@@ -33,7 +33,7 @@ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 gtkwave -y
 sudo apt-get install lib32z1 libxrender1:i386  libxft2 libxft2:i386  libxtst6:i386 libxi6:i386 -y
 #git clone -b spring2022 https://github.com/lbaitemple/ece2613 
 cp -r .c9 ~/environment
-rm -f *.run max10-22.1std.2.922.qdz backdoor.zip install*.sh
+rm -f *.run max10-22.1std.2.922.qdz backdoor.zip install*.sh nice-dcv-*
 #cd ece2613
 chmod +x updateos.sh
 ./updateos.sh
