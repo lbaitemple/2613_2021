@@ -1,2 +1,3 @@
 sudo apt  install docker-compose -y
-cd wireless && docker-compose up -f ./wireless/docker-compose.yaml
+sudo usermod -aG docker $USER
+cd wireless && docker-compose build
