@@ -4,3 +4,6 @@ services:
     build: 
         context: ./
     image: bionic-bai:latest
+  cmdshell:
+    image: bionic-bai:latest
+    command: /bin/bash
