@@ -1,15 +1,5 @@
+# will run in WSL
 export DEBIAN_FRONTEND=noninteractive
- wget https://raw.githubusercontent.com/lbaitemple/mangdang/main/install-resize.sh
- cat ./install-resize.sh   | sudo -E bash -
-
- ### 2. Install Desktop
-wget https://raw.githubusercontent.com/aws-samples/robotics-boilerplate/main/install-desktop.sh
-cat ./install-desktop.sh   | sudo -E bash -
-sudo sed -i "/#\$nrconf{restart} = 'i';/s/.*/\$nrconf{restart} = 'a';/" /etc/needrestart/needrestart.conf
-
-### 3. DCV
-wget https://raw.githubusercontent.com/aws-samples/robotics-boilerplate/main/install-dcv.sh
-cat ./install-dcv.sh | sudo -E bash -
 
 wget https://github.com/lbaitemple/ece2613/releases/download/v1.0.0/max10-22.1std.2.922.qdz
 wget https://github.com/lbaitemple/ece2613/releases/download/v1.0.0/ModelSimSetup-20.1.1.720-linux.run
