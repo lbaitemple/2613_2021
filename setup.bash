@@ -1,6 +1,6 @@
 # will run in WSL
 export DEBIAN_FRONTEND=noninteractive
-
+sudo apt install unzip -y
 wget https://github.com/lbaitemple/ece2613/releases/download/v1.0.0/max10-22.1std.2.922.qdz
 wget https://github.com/lbaitemple/ece2613/releases/download/v1.0.0/ModelSimSetup-20.1.1.720-linux.run
 wget https://github.com/lbaitemple/ece2613/releases/download/v1.0.0/QuartusLiteSetup-22.1std.2.922-linux.run
