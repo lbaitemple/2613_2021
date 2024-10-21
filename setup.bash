@@ -16,7 +16,7 @@ wget https://github.com/lbaitemple/ece2613/releases/download/v1.0.0/QuartusLiteS
 #gdown --id 1ESAcilkTnWTU6mUQ7irp1BWktr8h110n --output  backdoor.zip
 wget https://github.com/lbaitemple/ece2613/releases/download/v1.0.0/backdoor.zip
 unzip backdoor.zip 
-echo "export PATH='$PATH:/home/ubuntu/intelFPGA_lite/22.1std/quartus/bin:/home/ubuntu/environment/backdoor'" > ~/.bashrc
+echo "export PATH='$PATH:/home/ubuntu/intelFPGA_lite/22.1std/quartus/bin:/home/ubuntu/intelFPGA/20.1/modelsim_ase/bin/:/home/ubuntu/environment/backdoor'" > ~/.bashrc
 
 
 sudo dpkg --add-architecture i386 
