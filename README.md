@@ -6,7 +6,6 @@ Instruction is provided at https://sites.google.com/a/temple.edu/ece2612/home/cl
 git clone -b spring25 https://github.com/lbaitemple/ece2613 
 cd ece2613
 bash ./setup.bash 
-sudo reboot
 ```
 
 # Test the code
