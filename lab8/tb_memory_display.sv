@@ -57,7 +57,7 @@ endfunction
 	logic [3:0] mem_loc0, mem_loc1, mem_loc2, mem_loc3, mem_loc4, mem_loc5, mem_loc6, mem_loc7;
 
 	// Instantiate the Unit Under Test (UUT)
-	memory_display uut (.*, .anode_sel(), .rs_data, .ru_data, .w_ena(m_write), .w_data(w_data), .sw);
+	memory_display uut (.*, .rs_data, .ru_data, .w_ena(m_write), .w_data(w_data), .sw);
 
 	// set up the clock
 	always begin
