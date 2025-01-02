@@ -91,7 +91,7 @@ module tb_display_driver;
 
 			end
 
-			@((posedge anode_sel[0]) or (negedge anode_sel[0]));	// wait here for anode select change
+			@(posedge anode_sel[0] or negedge anode_sel[0]);	// wait here for anode select change
 			$display("Time: %t",$realtime);
 		end	// end of for loop
 
