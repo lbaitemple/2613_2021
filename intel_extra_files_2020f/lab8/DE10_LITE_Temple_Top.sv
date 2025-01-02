@@ -146,7 +146,7 @@ module DE10_LITE_Temple_Top(
 	assign arduino_out = 2'b10;
 
 	// instantiate top level design here
-	memory_display u_top (.cathode, .anode(an), .anode_sel(),
+	memory_display u_top (.cathode, .anode(an), 
 	 .rst(~key[0]), .clk(max10_clk1_50), .rs_data(), .ru_data(), 
 	 .w_ena(~key[1]), .w_data(), .sw(sw));
 
