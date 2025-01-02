@@ -43,7 +43,7 @@ endfunction
 
 
 	// parameters of test vectors (outputs = columns - inputs)
-	parameter COLUMNS = 26, INPUTS = 11, ROWS = 4;
+	parameter COLUMNS = 26, INPUTS = 11, ROWS = 10;
 
 	// this is how you declare a two dimensional test vector
 	logic [0:COLUMNS-1] test_vector [0:ROWS-1];
@@ -114,18 +114,18 @@ endfunction
 			sw = single_vector[1:INPUTS-1];
 			w_data = single_vector[1:4];
 
-			
+			//$display("loop index i: %d %b %b %b", i, m_write, sw[5], w_data);			
 			@(negedge clk);	// wait for negative edge
 			@(negedge clk);	// wait for negative edge
 			@(negedge clk);	// wait for negative edge
-			@(negedge clk);	
-			//$display("loop index i: %d", i);
-			//$display("loop: %0d | anode: %b <|> %b %b", i, {anode, cathode}, single_vector[INPUTS:COLUMNS-1], anode_sel);
+
+
+			//$display("loop: %0d | anode: %b <|> %b ", i, {anode, cathode}, single_vector[INPUTS:COLUMNS-1]);
 			// compare to expected value
 			if ({rs_data,ru_data,cathode} !== single_vector[INPUTS:COLUMNS-1]) begin
 				// display mismatch
 				$display("Mismatch %d,  %b.  %b\n", i, {rs_data, ru_data}, cathode);
-				$display("%b\n", single_vector[INPUTS:COLUMNS-1]);
+			//	$display("%b\n", single_vector[INPUTS:COLUMNS-1]);
 				/*$display("Mismatch--loop index i: %d; anode, cathode expected: %b_%b %h, received: %b_%b %h",
 					i,
 					single_vector[COLUMNS-11:COLUMNS-8],
@@ -135,11 +135,11 @@ endfunction
 				*/
 				mm_count = mm_count + 1;	// increment mismatch count
 			end else begin
-			//	$display("Match--loop index i: %d", i);
+				$display("Match--loop index i: %d", i);
 			end
-			@(negedge clk);	// wait for negative edge
-			@(negedge clk);	// wait for negative edge
-			@(negedge clk);	// wait for negative edge
+		//	@(negedge clk);	// wait for negative edge
+		//	@(negedge clk);	// wait for negative edge
+		//	@(negedge clk);	// wait for negative edge
 			//@(anode);	// wait for change in anode
 			//@(single_vector[COLUMNS-11:COLUMNS-8]);
 
