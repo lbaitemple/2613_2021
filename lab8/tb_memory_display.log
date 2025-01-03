@@ -1,0 +1,16 @@
+# vsim -c -do "memory_display.m_sim" tb_memory_display 
+# Start time: 00:39:16 on Jan 02,2025
+# Loading sv_std.std
+# Loading work.tb_memory_display
+# Loading work.memory_display
+# Loading work.rf_8x4_2r1w
+# Loading work.display_driver
+# Loading work.d_counter
+# Loading work.anode_decoder
+# Loading work.svn_seg_decoder
+# do memory_display.m_sim
+# Simulation complete - no mismatches!!!
+# ** Note: $finish    : tb_memory_display.sv(154)
+#    Time: 290 ns  Iteration: 1  Instance: /tb_memory_display
+# End time: 00:39:16 on Jan 02,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
