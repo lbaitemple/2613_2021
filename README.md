@@ -21,7 +21,7 @@ wsl -d ubuntu-22.04
 
 # Install the setup
 ```
-git clone -b spring25 https://github.com/lbaitemple/ece2613 
+git clone -b wsl https://github.com/lbaitemple/ece2613 
 cd ece2613
 bash ./setup.bash 
 ```
