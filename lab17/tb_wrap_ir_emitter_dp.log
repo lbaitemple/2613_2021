@@ -1,0 +1,42 @@
+# vsim -c -do "wrap_ir_emitter_dp.m_sim" tb_wrap_ir_emitter_dp 
+# Start time: 19:45:49 on Jan 05,2025
+# Loading sv_std.std
+# Loading work.tb_wrap_ir_emitter_dp
+# Loading work.wrap_ir_emitter_dp
+# Loading work.ir_emitter_dp
+# Loading work.divider
+# do wrap_ir_emitter_dp.m_sim
+# End time: 19:45:50 on Jan 05,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim work.tb_wrap_ir_emitter_dp 
+# Start time: 19:45:50 on Jan 05,2025
+# Loading sv_std.std
+# Loading work.tb_wrap_ir_emitter_dp
+# Loading work.wrap_ir_emitter_dp
+# Loading work.ir_emitter_dp
+# Loading work.divider
+# Index    1: Frequency 37.99 kHz, Period 0.0263 msec
+# Index    2: Frequency 37.99 kHz, Period 0.0263 msec
+# Index    3: Frequency 37.99 kHz, Period 0.0263 msec
+# Index    4: Frequency 37.99 kHz, Period 0.0263 msec
+# Index    5: Frequency 37.99 kHz, Period 0.0263 msec
+# Index    6: Frequency 75.99 kHz, Period 0.0132 msec
+# Index    7: Frequency 0.96 kHz, Period 1.0396 msec
+# Index    8: Frequency 37.99 kHz, Period 0.0263 msec
+# Index    9: Frequency 37.99 kHz, Period 0.0263 msec
+# Index   10: Frequency 37.99 kHz, Period 0.0263 msec
+# Index   11: Frequency 37.99 kHz, Period 0.0263 msec
+# Index   12: Frequency 37.99 kHz, Period 0.0263 msec
+# Index   13: Frequency 75.99 kHz, Period 0.0132 msec
+# Index   14: Frequency 3.62 kHz, Period 0.2764 msec
+# Index   15: Frequency 37.99 kHz, Period 0.0263 msec
+# Index   16: Frequency 37.99 kHz, Period 0.0263 msec
+# Index   17: Frequency 37.99 kHz, Period 0.0263 msec
+# Index   18: Frequency 37.99 kHz, Period 0.0263 msec
+# Index   19: Frequency 37.99 kHz, Period 0.0263 msec
+# Index   20: Frequency 75.99 kHz, Period 0.0132 msec
+# Simulation complete!!!
+# ** Note: $finish    : tb_wrap_ir_emitter_dp.sv(59)
+#    Time: 1764445 ns  Iteration: 0  Instance: /tb_wrap_ir_emitter_dp
+# End time: 19:45:51 on Jan 05,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

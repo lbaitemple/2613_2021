@@ -1,0 +1,37 @@
+# vsim -c -do "divider.m_sim" tb_divider 
+# Start time: 19:44:03 on Jan 05,2025
+# Loading sv_std.std
+# Loading work.tb_divider
+# Loading work.divider
+# do divider.m_sim
+# End time: 19:44:04 on Jan 05,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim work.tb_divider 
+# Start time: 19:44:04 on Jan 05,2025
+# Loading sv_std.std
+# Loading work.tb_divider
+# Loading work.divider
+# Testing divide by 10 - view and analyze timing diagram.
+# Time for tc going  low: 0.000000 nsec
+# Time for tc going high: 95.000000 nsec
+# Time for tc going  low: 105.000000 nsec
+# Time for tc going high: 195.000000 nsec
+# Time for tc going  low: 205.000000 nsec
+# Time for tc going high: 295.000000 nsec
+# Time for tc going  low: 305.000000 nsec
+# Time for tc going high: 395.000000 nsec
+# Time for tc going  low: 400.000000 nsec
+# Time for tc going high: 500.000000 nsec
+# Time for tc going  low: 505.000000 nsec
+# Time for tc going high: 595.000000 nsec
+# Time for tc going  low: 605.000000 nsec
+# Time for tc going high: 695.000000 nsec
+# Time for tc going  low: 705.000000 nsec
+# Time for tc going high: 795.000000 nsec
+# Time for tc going  low: 805.000000 nsec
+# Time for tc going high: 895.000000 nsec
+# Simulation complete!!!
+# ** Note: $finish    : tb_divider.sv(49)
+#    Time: 900 ns  Iteration: 0  Instance: /tb_divider
+# End time: 19:44:04 on Jan 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
