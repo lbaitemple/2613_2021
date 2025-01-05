@@ -1,0 +1,4 @@
+vsim work.tb_divider
+add wave -r /*
+run -all
+quit
