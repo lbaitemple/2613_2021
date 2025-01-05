@@ -1,1 +1,5 @@
-run 500ns
+vsim work.tb_memory_display
+add wave -r /*
+run -all
+quit
+
