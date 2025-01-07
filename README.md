@@ -1,4 +1,4 @@
-# 2613_2024s
+# WSL on Windows 11
 Instruction is provided at https://sites.google.com/a/temple.edu/ece2612/home/cloud9-setup
 
 ### Download VScode  (https://code.visualstudio.com/Download)
