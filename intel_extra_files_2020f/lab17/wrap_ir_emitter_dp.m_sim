@@ -1,0 +1,4 @@
+vsim work.tb_wrap_ir_emitter_dp
+add wave -r /*
+run -all
+quit
