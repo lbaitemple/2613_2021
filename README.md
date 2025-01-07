@@ -10,7 +10,7 @@ Instruction is provided at https://sites.google.com/a/temple.edu/ece2612/home/cl
    
 # Install an ubuntu distro in windows terminal
 
-## please use username ubuntu for the installation
+## please use username **ubuntu** for the installation
 ```
 wsl --install ubuntu-22.04
 ```
