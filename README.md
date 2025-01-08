@@ -3,6 +3,7 @@ Instruction is provided at https://sites.google.com/a/temple.edu/ece2612/home/cl
 
 ### Download VScode  (https://code.visualstudio.com/Download)
 #### find the following extensions
+0. wsl
 1. remote ssh
 2. code runner
 3. wavetrace
