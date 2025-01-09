@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lbai/2613_2020s_solutions/lab8/tb_sw_decode.sv" into library work
+INFO: [VRFC 10-311] analyzing module tb_sw_decode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lbai/2613_2020s_solutions/lab8/sw_decode.sv" into library work
+INFO: [VRFC 10-311] analyzing module sw_decode
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/lbai/2613_2020s_solutions/lab7/divider.sv" into library work
+INFO: [VRFC 10-311] analyzing module divider

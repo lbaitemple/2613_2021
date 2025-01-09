@@ -1,0 +1,13 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /data/courses/ece_2612/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/xelab -debug typical tb_sw_decode 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.divider(BIT_SIZE=5)
+Compiling module work.sw_decode
+Compiling module work.tb_sw_decode
+Built simulation snapshot work.tb_sw_decode
