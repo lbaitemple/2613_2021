@@ -14,11 +14,11 @@ sudo reboot
 
 - right click on qsf (extension file) and run
 
-
+<!---
 ### wireless
 ```
 cd wireless
 docker-compose build
 docker run -it bionic-bai:latest /bin/bash
 ```
-
+--->
