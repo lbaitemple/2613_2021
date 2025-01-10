@@ -1,0 +1,4 @@
+vsim work.tb_ir_transmitter_top
+add wave -r /*
+run -all
+quit
