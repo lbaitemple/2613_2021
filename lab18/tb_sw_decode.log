@@ -1,0 +1,20 @@
+# vsim -c -do "sw_decode.m_sim" tb_sw_decode 
+# Start time: 18:49:44 on Jan 09,2025
+# Loading sv_std.std
+# Loading work.tb_sw_decode
+# Loading work.sw_decode
+# Loading work.divider
+# do sw_decode.m_sim
+# End time: 18:49:45 on Jan 09,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim work.tb_sw_decode 
+# Start time: 18:49:45 on Jan 09,2025
+# Loading sv_std.std
+# Loading work.tb_sw_decode
+# Loading work.sw_decode
+# Loading work.divider
+# Simulation complete - no mismatches!!!
+# ** Note: $finish    : tb_sw_decode.sv(73)
+#    Time: 680 ns  Iteration: 1  Instance: /tb_sw_decode
+# End time: 18:49:45 on Jan 09,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

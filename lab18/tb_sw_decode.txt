@@ -1,0 +1,81 @@
+//
+// This file contains the test vectors for the switch decoder.
+//
+// The first column is the next_bit signal.
+// The next 11 columns are the switch values sw[10:0].
+// The next column is the bit_done signal.
+// The last column is the bit_value signal.
+// It does not cover all possibilities, just checking
+// the interconnections and instantiations.
+// Each line will get read clock cycle.
+//
+1_111_1111_1111_0_0	// first vector checks toggle bit (15)
+0_011_1111_1111_0_0	// next vector checks bit (14) (sw[10])
+1_100_0000_0000_0_1	// next vector checks bit (14) (sw[10])
+0_101_1111_1111_0_0	// next vector checks bit (13) (sw[9])
+1_010_0000_0000_0_1	// next vector checks bit (13) (sw[9])
+0_110_1111_1111_0_0	// next vector checks bit (12) (sw[8])
+1_001_0000_0000_0_1	// next vector checks bit (12) (sw[8])
+0_111_0111_1111_0_0	// next vector checks bit (11) (sw[7])
+1_000_1000_0000_0_1	// next vector checks bit (11) (sw[7])
+0_111_1011_1111_0_0	// next vector checks bit (10) (sw[6])
+1_000_0100_0000_0_1	// next vector checks bit (10) (sw[6])
+0_111_1101_1111_0_0	// next vector checks bit (9) (sw[5])
+1_000_0010_0000_0_1	// next vector checks bit (9) (sw[5])
+0_111_1110_1111_0_0	// next vector checks bit (8) (sw[4])
+1_000_0001_0000_0_1	// next vector checks bit (8) (sw[4])
+0_111_1111_0111_0_0	// next vector checks bit (7) (sw[3])
+1_000_0000_1000_0_1	// next vector checks bit (7) (sw[3])
+0_111_1111_1011_0_0	// next vector checks bit (6) (sw[2])
+1_000_0000_0100_0_1	// next vector checks bit (6) (sw[2])
+0_111_1111_1101_0_0	// next vector checks bit (5) (sw[1])
+1_000_0000_0010_0_1	// next vector checks bit (5) (sw[1])
+0_111_1111_1110_0_0	// next vector checks bit (4) (sw[0])
+1_000_0000_0001_0_1	// next vector checks bit (4) (sw[0])
+// the remaining bits are checksum bits
+0_000_0000_0000_0_1	// next vector checks bit (3) checksum 15, 11, 7
+0_000_0000_1000_0_0	// next vector checks bit (3)
+0_000_1000_0000_0_0	// next vector checks bit (3)
+1_000_1000_1000_0_1	// next vector checks bit (3)
+0_000_0000_0000_0_1	// next vector checks bit (2) checksum 14, 10, 6
+0_000_0000_0100_0_0	// next vector checks bit (2)
+0_000_0100_0000_0_0	// next vector checks bit (2)
+0_000_0100_0100_0_1	// next vector checks bit (2)
+0_100_0000_0000_0_0	// next vector checks bit (2)
+0_100_0000_0100_0_1	// next vector checks bit (2)
+0_100_0100_0000_0_1	// next vector checks bit (2)
+1_100_0100_0100_0_0	// next vector checks bit (2)
+0_000_0000_0000_0_1	// next vector checks bit (1) checksum 13, 9, 5
+0_000_0000_0010_0_0	// next vector checks bit (1)
+0_000_0010_0000_0_0	// next vector checks bit (1)
+0_000_0010_0010_0_1	// next vector checks bit (1)
+0_010_0000_0000_0_0	// next vector checks bit (1)
+0_010_0000_0010_0_1	// next vector checks bit (1)
+0_010_0010_0000_0_1	// next vector checks bit (1)
+1_010_0010_0010_0_0	// next vector checks bit (1)
+0_000_0000_0000_0_1	// next vector checks bit (0) checksum 12, 8, 4
+0_000_0000_0001_0_0	// next vector checks bit (0)
+0_000_0001_0000_0_0	// next vector checks bit (0)
+0_000_0001_0001_0_1	// next vector checks bit (0)
+0_001_0000_0000_0_0	// next vector checks bit (0)
+0_001_0000_0001_0_1	// next vector checks bit (0)
+0_001_0001_0000_0_1	// next vector checks bit (0)
+1_001_0001_0001_1_0	// next vector checks bit (0)
+// now toggle bit has changed
+1_000_0000_0000_0_1	// first vector checks toggle bit (15)
+// now decrement down to get to the checksum that includes this bit
+1_100_0000_0000_0_1	// next vector checks bit (14) (sw[10])
+1_010_0000_0000_0_1	// next vector checks bit (13) (sw[9])
+1_001_0000_0000_0_1	// next vector checks bit (12) (sw[8])
+1_000_1000_0000_0_1	// next vector checks bit (11) (sw[7])
+1_000_0100_0000_0_1	// next vector checks bit (10) (sw[6])
+1_000_0010_0000_0_1	// next vector checks bit (9) (sw[5])
+1_000_0001_0000_0_1	// next vector checks bit (8) (sw[4])
+1_000_0000_1000_0_1	// next vector checks bit (7) (sw[3])
+1_000_0000_0100_0_1	// next vector checks bit (6) (sw[2])
+1_000_0000_0010_0_1	// next vector checks bit (5) (sw[1])
+1_000_0000_0001_0_1	// next vector checks bit (4) (sw[0])
+0_000_0000_0000_0_0	// next vector checks bit (3) checksum 15, 11, 7
+0_000_0000_1000_0_1	// next vector checks bit (3)
+0_000_1000_0000_0_1	// next vector checks bit (3)
+1_000_1000_1000_0_0	// next vector checks bit (3)
