@@ -1,0 +1,4 @@
+vsim work.tb_sw_decode
+add wave -r /*
+run -all
+quit
