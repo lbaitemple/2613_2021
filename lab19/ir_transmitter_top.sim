@@ -1,1 +1,1 @@
-../lab7/divider.sv ../lab7/ir_emitter_dp.sv ir_emitter_fsm.sv pulse_button_debounce.sv ../lab8/sw_decode.sv
+../lab17/divider.sv ../lab17/ir_emitter_dp.sv ir_emitter_fsm.sv pulse_button_debounce.sv ../lab18/sw_decode.sv
