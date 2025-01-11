@@ -125,7 +125,7 @@ module DE10_LITE_Temple_Top(
 );
 
 	// tie unused LED's low by switches
-	assign ledr[9:0] = sw[9:0];
+	// assign ledr = sw;
 
 
 endmodule
