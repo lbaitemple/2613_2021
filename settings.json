@@ -4,6 +4,7 @@
         ".tcl": "$ECE2612/backdoor/synthesize $fileNameWithoutExt",
         ".m_sim": "$ECE2612/backdoor/ms_simulate $fileNameWithoutExt",
         ".qsf": "$ECE2612/backdoor/q_synthesize $fileNameWithoutExt",
+        ".vcd": "$ECE2612/backdoor/ms_view $fileNameWithoutExt",
     },
     "code-runner.fileDirectoryAsCwd": true,
     "code-runner.clearPreviousOutput": true,
