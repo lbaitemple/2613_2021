@@ -11,11 +11,11 @@ module tb_wrap_ir_emitter_dp;
 
 	// set up clock signal
 	always begin
-		// 10 nsec period = 100 MHz
+		// 20 nsec period = 50 MHz
 		clk = 0;
-		#5;	// 5 nsec
+		#10;	// 5 nsec
 		clk = 1;
-		#5;	// 5 nsec
+		#10;	// 5 nsec
 	end
 
 	// timeout loop
