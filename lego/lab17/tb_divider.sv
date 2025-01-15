@@ -10,9 +10,9 @@ module tb_divider;
 	// set up clock signal
 	always begin
 		clk = 0;
-		#5;	// 5 nsec
+		#10;	// 5 nsec
 		clk = 1;
-		#5;	// 5 nsec
+		#10;	// 5 nsec
 	end
 	
 	always @(posedge tc) begin
