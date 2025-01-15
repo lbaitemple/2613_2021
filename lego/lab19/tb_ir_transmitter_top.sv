@@ -14,11 +14,11 @@ module tb_ir_transmitter_top;
 
 	// set up clock signal
 	always begin
-		// 10 nsec period = 100 MHz
+		// 20 nsec period = 50 MHz
 		clk = 0;
-		#5;	// 5 nsec
+		#10;	// 5 nsec
 		clk = 1;
-		#5;	// 5 nsec
+		#10;	// 5 nsec
 	end
 
 	always @(posedge emitter) begin
