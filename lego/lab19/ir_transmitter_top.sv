@@ -26,7 +26,7 @@ module ir_transmitter_top (output logic emitter,
 
 	// divider to create 0.01 sec - divide by 1,000,000 - 20 bits
 	divider #(.BIT_SIZE(20)) u_dbt (.tc(dbt), .count(), .clk, .rst, .ena(1'b1),
-		.init_count(20'd999999));
+					.init_count(20'd499999));
 
 	// synchronizer for start button
 	always_ff @(posedge clk) begin
