@@ -16,9 +16,9 @@ module tb_ir_transmitter_top;
 	always begin
 		// 20 nsec period = 50 MHz
 		clk = 0;
-		#10;	// 5 nsec
+		#10;	// 10 nsec
 		clk = 1;
-		#10;	// 5 nsec
+		#10;	// 10 nsec
 	end
 
 	always @(posedge emitter) begin
