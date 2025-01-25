@@ -12,7 +12,7 @@ sudo reboot
 # Install Vivado
 
 - create a xilinx account at https://www.amd.com/en/registration/create-account.html
-- activiate your acccount
+- activate your acccount
 - open x-windows in cloud9
 - run the following commands
   
