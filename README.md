@@ -9,6 +9,19 @@ bash ./setup.bash
 sudo reboot
 ```
 
+# Install Vivado
+
+- create a xilinx account at https://www.amd.com/en/registration/create-account.html
+- activiate your acccount
+- open x-windows in cloud9
+- run the following commands
+  
+  ```
+  cd ~/environment/ece2613
+  sudo ./FPGAs_AdaptiveSoCs_Unified_2024.2_1113_1001_Lin64.bin
+  
+  ```
+
 # Test the code
 - right click on m_sim (extension file) and run
 
