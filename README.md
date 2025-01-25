@@ -3,7 +3,7 @@ Instruction is provided at https://sites.google.com/a/temple.edu/ece2612/home/cl
 
 # after you select the instance for cloud9, in the terminal
 ```
-git clone -b cloud9 https://github.com/lbaitemple/ece2613 
+git clone -b vivado https://github.com/lbaitemple/ece2613 
 cd ece2613
 bash ./setup.bash 
 sudo reboot
