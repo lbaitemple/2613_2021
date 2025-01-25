@@ -31,6 +31,7 @@ unzip backdoor.zip
 echo "export PATH='$PATH:/home/ubuntu/intelFPGA_lite/23.1std/quartus/bin:/home/ubuntu/environment/backdoor'" > ~/.bashrc
 
 
+
 sudo dpkg --add-architecture i386 
 sudo apt-get update 
 #sudo sed -i "/#\$nrconf{restart} = 'i';/s/.*/\$nrconf{restart} = 'a';/" /etc/needrestart/needrestart.conf
