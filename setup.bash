@@ -1,5 +1,6 @@
 export DEBIAN_FRONTEND=noninteractive
- wget https://raw.githubusercontent.com/lbaitemple/mangdang/main/install-resize.sh
+ #wget https://raw.githubusercontent.com/lbaitemple/mangdang/main/install-resize.sh
+wget https://raw.githubusercontent.com/lbaitemple/ece2613/refs/heads/cloud9/install-resize.sh
  cat ./install-resize.sh   | sudo -E bash -
 
  ### 2. Install Desktop
