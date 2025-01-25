@@ -30,7 +30,7 @@ wget https://github.com/lbaitemple/ece2613/releases/download/v2.0.0/backdoor.zip
 unzip backdoor.zip 
 echo "export PATH='$PATH:/home/ubuntu/intelFPGA_lite/23.1std/quartus/bin:/home/ubuntu/environment/backdoor'" > ~/.bashrc
 
-
+wget https://github.com/lbaitemple/ece2613/releases/download/v2.0.0/FPGAs_AdaptiveSoCs_Unified_2024.2_1113_1001_Lin64.bin
 
 sudo dpkg --add-architecture i386 
 sudo apt-get update 
