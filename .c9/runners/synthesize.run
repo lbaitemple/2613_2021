@@ -6,7 +6,7 @@
       // set Vivado environment
       //"export XILINXD_LICENSE_FILE=2100@coe-license.eng.temple.edu",
       //". $ECE2612/Xilinx/Vivado/2018.2/settings64.sh",
-       ". $ECE2612/Xilinx/Vivado/2020.2/.settings64-Vivado.sh",
+       ". $ECE2612/Xilinx/Vivado/2024.2/.settings64-Vivado.sh",
       
       // set to exit if any non-zero returned
       "set -e",
