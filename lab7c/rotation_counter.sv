@@ -1,7 +1,9 @@
 `timescale 1ns / 1ps
 
-module rotation_counter (output logic [6:0] cathode, output logic [3:0] anode,
+module rotation_counter (output logic [6:0] hex0, output logic [6:0] hex1,
+	output logic [6:0] hex2, output logic [6:0] hex3,
 	output logic error, input logic q_a, q_b, input logic rst, input logic clk);
+
 
 	// digit signals
 	logic [3:0] digit3, digit2, digit1, digit0;
