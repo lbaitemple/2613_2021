@@ -30,7 +30,7 @@
 000_000
 // go from HOLD -> UP -> UP -> ERROR
 001_110
-001_110
+001_001
 011_001
 // reset
 100_000	// reset
@@ -42,7 +42,7 @@
 100_000	// reset
 // go from HOLD -> DOWN -> DOWN -> ERROR
 010_100
-010_100
+010_001
 011_001
 // reset
 100_000	// reset
