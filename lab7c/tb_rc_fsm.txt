@@ -1,0 +1,54 @@
+//
+// inputs: rst, quad_ctl (2 bits)
+// outputs: enable, up_down, error
+//
+100_000	// reset
+000_000	// state HOLD
+000_000	// state HOLD
+// go from HOLD -> UP -> HOLD
+001_110
+000_000
+// go from HOLD -> DOWN -> HOLD
+010_100
+000_000
+// go from HOLD -> ERROR
+011_001
+// stay in HOLD no matter quad_ctl
+000_001
+001_001
+010_001
+011_001
+// reset
+100_000	// reset
+// go from HOLD -> UP -> DOWN -> HOLD
+001_110
+010_100
+000_000
+// go from HOLD -> DOWN -> UP -> HOLD
+010_100
+001_110
+000_000
+// go from HOLD -> UP -> UP -> ERROR
+001_110
+001_110
+011_001
+// reset
+100_000	// reset
+// go from HOLD -> UP -> ERROR
+001_110
+011_001
+011_001
+// reset
+100_000	// reset
+// go from HOLD -> DOWN -> DOWN -> ERROR
+010_100
+010_100
+011_001
+// reset
+100_000	// reset
+// go from HOLD -> DOWN -> ERROR
+010_100
+011_001
+011_001
+// reset
+100_000	// reset

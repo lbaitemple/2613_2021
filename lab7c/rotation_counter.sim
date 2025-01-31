@@ -1,0 +1,1 @@
+up_down_bcd_counter.sv rc_fsm.sv rot_enc_rec.sv  up_down_count_dp.sv ../lab6a/display_driver.sv ../lab6a/d_counter.sv ../lab3/svn_seg_decoder.sv ../lab3/anode_decoder.sv

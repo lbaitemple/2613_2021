@@ -1,0 +1,56 @@
+//
+// inputs: rst, q_a, q_b
+// outputs: digitX(4 bitx), error
+//
+// reset already taken care of for initial clock cycles
+//
+000_0000_0	// digit 0
+000_0000_0	// digit 1
+000_0000_0	// digit 2
+000_0000_0	// digit 3
+// count up
+001_0001_0	// digit 0
+001_0000_0	// digit 1
+001_0000_0	// digit 2
+001_0000_0	// digit 3
+// count up
+011_0010_0	// digit 0
+011_0000_0	// digit 1
+011_0000_0	// digit 2
+011_0000_0	// digit 3
+// count up
+010_0011_0	// digit 0
+010_0000_0	// digit 1
+010_0000_0	// digit 2
+010_0000_0	// digit 3
+// error
+001_0011_1	// digit 0
+000_0000_1	// digit 1
+010_0000_1	// digit 2
+011_0000_1	// digit 3
+// reset
+100_0000_0	// reset
+// count down
+010_1001_0	// digit 0
+010_1001_0	// digit 1
+010_1001_0	// digit 2
+010_1001_0	// digit 3
+// count down
+011_1000_0	// digit 0
+011_1001_0	// digit 1
+011_1001_0	// digit 2
+011_1001_0	// digit 3
+// count down
+001_0111_0	// digit 0
+001_1001_0	// digit 1
+001_1001_0	// digit 2
+001_1001_0	// digit 3
+// error
+010_0111_1	// digit 0
+000_1001_1	// digit 1
+001_1001_1	// digit 2
+011_1001_1	// digit 3
+// reset
+100_0000_0	// reset
+000_0000_0	// digit 0
+000_0000_0	// digit 1
