@@ -31,13 +31,13 @@ module tb_wrap_ir_emitter_dp;
 		$dumpvars();
 		// set up time format
 		$timeformat(-9, 0, " ns", 4);
-		last_time = 10.0;
+		last_time = 20.0;
 		i = 0;	// to clean up unknowns
 
 		rst = 1;	// start with reset active
 		ena = 1;	// and enable on
 
-		#10;	// wait 10 nsec
+		#25;	// wait 10 nsec
 
 		rst = 0;	// reset inactive
 
@@ -47,9 +47,9 @@ module tb_wrap_ir_emitter_dp;
 		for (i=1; i < 21; i = i + 1) begin
 			wait(emitter_out == 1'b1);
 			wait(emitter_out == 1'b0);	// wait for emitter_out to toggle to low
-			$display("Index %4d: Frequency %.2f kHz, Period %.4f msec",
+			$display("Index %4d: Frequency %.2f kHz, Period %.4f msec,\t current tick:  %.4f msec",
 				i, 1000000.0/($realtime - last_time),
-				($realtime - last_time)/1000000.0);
+				($realtime - last_time)/1000000.0, last_time);
 			last_time = $realtime;	// save last_time for next loop
 		end
 
