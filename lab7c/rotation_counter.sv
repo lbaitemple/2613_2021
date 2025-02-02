@@ -10,9 +10,11 @@ module rotation_counter (output logic [6:0] hex0, output logic [6:0] hex1,
 	logic enable, up_down;
 	logic [1:0] quad_ctl;
 
-	// instantiate display driver
-	display_driver u_dd (.cathode, .anode, .anode_sel(), .digit3, .digit2, .digit1,
-		.digit0, .display_on(1'b1), .rst, .clk);
+	// instantiate  seven segment display for each digit 
+	svn_seg_decoder u_sd0 (.seg_out(hex0), .bcd_in(digit0), .display_on(1'b1));
+	svn_seg_decoder u_sd1 (.seg_out(hex1), .bcd_in(digit1), .display_on(1'b1));
+	svn_seg_decoder u_sd2 (.seg_out(hex2), .bcd_in(digit2), .display_on(1'b1));
+	svn_seg_decoder u_sd3 (.seg_out(hex3), .bcd_in(digit3), .display_on(1'b1));
 
 	// instantiate up-down counter data path
 
